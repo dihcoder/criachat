@@ -1,2 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+
+:root {
+    --primary-color: #4a6cff;
+    --secondary-color: #3b5fe2;
+    --tertiary-color: #eef2ff;
+    --background-color: #f8f9ff;
+    --text-color: lch(21.25% 0 296.81);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --transition-duration: 0.5s;
+    --ease-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.Anim-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.Anim-fadeOut {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.Anim-fadeInAndOut {
+    animation: fadeInAndOut 1.5s ease-in-out 2.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInAndOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
