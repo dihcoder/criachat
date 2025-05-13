@@ -1,4 +1,4 @@
-<div class="bg-white Anim-fadeIn rounded-xl shadow-xl p-10 max-w-xl text-center">
+<div class="bg-white Anim-fadeIn rounded-xl shadow-xl p-10 max-w-2xl text-center">
     <h1 class="text-2xl md:text-3xl font-bold text-blue-600 mb-4">
         Bem-vindo ao Criador de Chatbot
     </h1>
@@ -9,13 +9,7 @@
     </p>
     <p class="text-gray-800 mb-6">O que você gostaria de fazer?</p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <button
-            class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition-transform duration-400 hover:-translate-y-1">
-            Criar um novo chatbot
-        </button>
-        <button
-            class="bg-blue-100 text-blue-600 font-semibold py-2 px-6 rounded-full hover:bg-blue-200 transition-transform duration-400 hover:-translate-y-1">
-            Carregar um chatbot existente
-        </button>
+        <app-button-primary label="Criar um novo chatbot"/>
+        <app-button-secondary label="Carregar um chatbot existente"/>
     </div>
 </div>
